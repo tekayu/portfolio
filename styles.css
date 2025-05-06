@@ -1,0 +1,16 @@
+main {
+    margin: auto 100px;
+}
+
+#span_colour {
+    color: red;
+}
+
+#span_font_styles {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+#span_font_size {
+    font-size: 2em;
+}

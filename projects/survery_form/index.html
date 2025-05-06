@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <link rel="stylesheet" href="styles.css">
+    <title>Survery Form</title>
+    <meta charset="UTF-8">
+  <header>
+  <body>
+    <main>
+      <section id="title">
+          <h1 id="form-title">Survery Form</h1>
+          <p id="description">A functional Survery Form</p>
+        </section>
+      <form id="survey-form">
+        <!-- User details -->
+        <fieldset id="user-field">
+          <!-- Name -->
+          <legend>User details</legend>
+          <label for="name" id="name-label">Name:</label>
+          <input id="name" type="text" required placeholder="name"/>
+          <!-- Email -->
+          <label for="email" id="email-label">Email:</label>
+          <input id="email" type="email" required placeholder="email"/>
+        </fieldset>
+
+        <!-- Extra -->
+        <fieldset>
+          <!-- Number -->
+          <label for="number" id="number-label">What is your age:</label>
+          <input id="number" type="number" min="1" max="100" placeholder="Age"/>
+
+          <!-- Dropdown -->
+          <label for="dropdown">What best describes your current status</label>
+          <select id="dropdown">
+            <option default>Select</option>
+            <option value="in-school">In school</option>
+            <option value="styding">Studying</option>
+            <option value="working">Working</option>
+            <option value="other">other</option>
+          </select>
+        </fieldset>
+
+          <!-- Radio -->
+          <fieldset id="fav-pet">
+            <h3>What is your favourite pet?</h3> 
+            <div>
+              <div class="radio-dropdown">
+                <label for="dogs">Dogs</label>
+                <input value="dogs" type="radio" id="dogs" name="pets"/>
+              </div>
+              <div class="radio-dropdown">
+                <label for="cats">Cats</label>
+                <input value="cats" type="radio" id="cats" name="pets"/>
+              </div>
+              <div class="radio-dropdown">
+                <label for="other">Others</label>
+                <input value="other" type="radio" id="other" name="pets"/>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Colours -->
+          <fieldset>
+            <h3>What colours do you like?</h3>
+            <input type="checkbox" id="red" name="colours" value="red">
+            <label for="red">Red</label>
+            <input type="checkbox" id="green" name="colours" value="green"/>
+            <label for="green">Green</label>
+            <input type="checkbox" id="blue" name="colours" value="blue"/>
+            <label for="blue">Blue</label>
+          </fieldset>
+
+          <!-- Additional comments -->
+          <fieldset>
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="I also like..." >
+            </textarea>
+          </fieldset>
+              <input id="submit" type="submit" value="Submit"/>
+      </form>
+    </main>
+  </body>
+</html>
